@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Earnings from "./Earnings";
 import Navbar from "./Navbar";
 
 const MainContent = () => {
@@ -8,7 +9,9 @@ const MainContent = () => {
       <Navbar />
       <SubContainer>
         <SectionOne>
-          <ColumnOne1></ColumnOne1>
+          <ColumnOne1>
+            <Earnings />
+          </ColumnOne1>
           <ColumnTwo1></ColumnTwo1>
         </SectionOne>
         <SectionTwo>
@@ -41,15 +44,35 @@ const TitleText = styled.h3`
   height: 20%;
 `;
 
-const SectionOne = styled.div``;
+const SectionOne = styled.div`
+  display: fex;
+  justify-content: space-between;
+  height: 40%;
+  gap: 2rem;
+  widht: 100%;
+`;
 
-const SectionTwo = styled.div``;
+const SectionTwo = styled.div`
+  display: flex;
+  gap: 2rem;
+  height: 26vh;
+`;
 
-const ColumnOne1 = styled.div``;
+const ColumnOne1 = styled.div`
+  display: flex;
+  gap: 3rem;
+
+`;
 
 const ColumnOne2 = styled.div``;
 
-const ColumnTwo1 = styled.div``;
+const ColumnTwo1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 115%;
+  width: 100%;
+
+`;
 
 const ColumnTwo2 = styled.div``;
 
