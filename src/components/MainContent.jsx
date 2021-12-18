@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Earnings from "./Earnings";
+import Info from "./info";
+import Invoices from "./Invoices";
+import JoinSlack from "./JoinSlack";
 import Navbar from "./Navbar";
+import Projects from "./Projects";
+import ProjectsRecommendation from "./ProjectsRecommendation";
 
 const MainContent = () => {
   return (
@@ -11,12 +16,25 @@ const MainContent = () => {
         <SectionOne>
           <ColumnOne1>
             <Earnings />
+            <Info />
           </ColumnOne1>
-          <ColumnTwo1></ColumnTwo1>
+          <ColumnTwo1>
+            <TitleText>Seus projetos</TitleText>
+            <Projects />
+          </ColumnTwo1>
         </SectionOne>
         <SectionTwo>
-          <ColumnOne2></ColumnOne2>
-          <ColumnTwo2></ColumnTwo2>
+          <ColumnOne2>
+            <InvoiceContainer>
+              <TitleText>Projetos recentes</TitleText>
+              <Invoices />
+              <JoinSlack />
+            </InvoiceContainer>
+          </ColumnOne2>
+          <ColumnTwo2>
+            <TitleText>Grupo de Freelancers</TitleText>
+            <ProjectsRecommendation />
+          </ColumnTwo2>
         </SectionTwo>
       </SubContainer>
     </Container>
@@ -65,6 +83,11 @@ const ColumnOne1 = styled.div`
 `;
 
 const ColumnOne2 = styled.div``;
+
+const InvoiceContainer = styled.div`
+  height: 60%;
+`;
+
 
 const ColumnTwo1 = styled.div`
   display: flex;
