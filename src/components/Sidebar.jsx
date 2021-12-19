@@ -53,6 +53,12 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    height: max-content !important;
+    width: 100%;
+  }
+
 `;
 
 const ProfileContainer = styled.div`
